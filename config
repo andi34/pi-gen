@@ -1,4 +1,4 @@
-IMG_NAME=photobooth-v4.1.0
+IMG_NAME=photobooth-v4.1.0-arm64
 RELEASE=bullseye
 DEPLOY_ZIP=1
 TARGET_HOSTNAME=photobooth-pi
