@@ -22,7 +22,7 @@ sed -i "s/^#PrintLastLog yes.*/PrintLastLog no/" ${ROOTFS_DIR}/etc/ssh/sshd_conf
 on_chroot << EOF
 echo '---> call photobooth install script'
 cd /home/${FIRST_USER_NAME}
-./install-photobooth.sh -username="${FIRST_USER_NAME}" -raspberry -silent
+./install-photobooth.sh -username="${FIRST_USER_NAME}" -raspberry -silent -branch="stable4"
 EOF
 
 rm "${ROOTFS_DIR}"/home/${FIRST_USER_NAME}/install-photobooth.sh
