@@ -1,6 +1,6 @@
 cups
 libcamera-tools
-libcamera-apps
+rpicam-apps
 python3-pip
 python3-picamera
 pigpio python3-pigpio raspi-gpio python3-rpi.gpio
