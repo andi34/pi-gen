@@ -8,7 +8,7 @@ AUTOSTART_FILE=""
 WEBBROWSER="chromium-browser"
 KIOSK_FLAG="--kiosk http://localhost"
 CHROME_DEFAULT_FLAGS="--noerrdialogs --disable-infobars --disable-features=Translate --no-first-run --check-for-update-interval=31536000 --touch-events=enabled --password-store=basic"
-EXTRA_FLAGS="$CHROME_DEFAULT_FLAGS --use-gl=egl"
+EXTRA_FLAGS="$CHROME_DEFAULT_FLAGS --ozone-platform=wayland --start-maximized"
 INSTALLFOLDERPATH="/var/www/html"
 
 if [ -z "$USER_NAME" ]; then
@@ -41,17 +41,3 @@ chown $USER_NAME:$USER_NAME /home/$USER_NAME/Desktop/photobooth.desktop
 echo "### Starting photobooth in Kiosk-Mode on every start"
 AUTOSTART_FILE="/etc/xdg/autostart/photobooth.desktop"
 browser_shortcut
-
-echo "### Hide the mouse cursor on every start and disable the screen saver."
-LXDE_AUTOSTART="/etc/xdg/lxsession/LXDE-pi/autostart"
-
-echo "# Photobooth" >> "$LXDE_AUTOSTART"
-echo "# turn off display power management system" >> "$LXDE_AUTOSTART"
-echo "@xset -dpms" >> "$LXDE_AUTOSTART"
-echo "# turn off screen blanking" >> "$LXDE_AUTOSTART"
-echo "@xset s noblank" >> "$LXDE_AUTOSTART"
-echo "# turn off screen saver" >> "$LXDE_AUTOSTART"
-echo "@xset s off" >> "$LXDE_AUTOSTART"
-echo "# Hide mousecursor" >> "$LXDE_AUTOSTART"
-echo "@unclutter -idle 3" >> "$LXDE_AUTOSTART"
-echo "# Photobooth End" >> "$LXDE_AUTOSTART"
