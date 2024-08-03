@@ -31,11 +31,8 @@ printf "@@                  ,@@@@&       &@@@@,                  @@\n"
 printf "@@                      (@@@@@@@@@(                      @@\n"
 printf "@@                                                       @@\n"
 printf "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n"
-
-
+printf "\n\n"
 printf "\nTo access the photobooth browse to ${BLUE}http://${IP}${NC} from another device on your network."
-
-printf "\n${BOLD}* Documentation:    ${NC}${GREEN}https://github.com/PhotoboothProject/photobooth/wiki${NC}"
-printf "\n${BOLD}* Website / Source: ${NC}${GREEN}https://github.com/PhotoboothProject/photobooth${NC}"
-
+printf "\n"
+printf "\n${BOLD}* Documentation:    ${NC}${GREEN}https://photoboothproject.github.io${NC}"
 printf "\n\n"
