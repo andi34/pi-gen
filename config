@@ -1,5 +1,5 @@
-IMG_NAME=photobooth-v4.1.0-arm64
-RELEASE=bullseye
+IMG_NAME=photobooth-v4.99.0-arm64
+RELEASE=bookworm
 DEPLOY_ZIP=1
 TARGET_HOSTNAME=photobooth-pi
 DISABLE_FIRST_BOOT_USER_RENAME=1
